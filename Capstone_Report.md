@@ -89,7 +89,7 @@ Additional data cleanup was done on data after the data exploration of it and wi
 ### Data Exploration
 The first step was to identify the seasonal components for the data to identify if the __Vision Zero__ approach has had any effectiveness on collision reduction
 
- ![TimeSeries](img/timeseries_analysis.png)
+ ![TimeSeries](Img/timeseries_analysis.png)
 
 
 From these plots we determine the following:
@@ -100,7 +100,7 @@ From these plots we determine the following:
 
 Does this information look different for fatalities?
 
-![TSF](img/timeseries_analysis_fatalities.png)
+![TSF](Img/timeseries_analysis_fatalities.png)
 
 For the fatality plot there are some differences between years
 * There is an increase in the fall months, perhaps due to it being dark out.
@@ -109,7 +109,7 @@ For the fatality plot there are some differences between years
 
 In order to have a assessment of the performance we also look at the percentages of each type of collisions in relation to the overall.
 
-![year](img/year_max_severity.png)
+![year](Img/year_max_severity.png)
 
 The overall trend over years and severity level seems to stay consistent.
 
@@ -125,7 +125,7 @@ We also take a look at illumination and its effects on collision.
 | Dark-unknown roadway lighting |            148 |
 | Other                         |             51 |
 
-![illumination](img/illumination_heatmap.png)
+![illumination](Img/illumination_heatmap.png)
 
 In terms of percentages, there is a slight increase on collisions when the road, has illuination of `Othe`r and `Dark-unknown roadway lighting`. However the collision count for those is low, so those records where dropped as they provide incomplete information.
 
@@ -190,26 +190,26 @@ For road conditions the results are as follows:
 
 A significant number of collisions occur under wet conditions, considering we would expect roads to remain in its majority dry.
 
-![road_con](img/road_con.png)
+![road_con](Img/road_con.png)
 
 However it does appear that both Water (low count of records) and slush have an effect on if the road collision results on a major injury or a fatality.
 Finally taking a look at what can be gathered from spatial data. Analyzing the number of incidents we can determine which zipcodes contain the largest amount of collisions.
 
-![zipcode](img/pa_zip_collisions.png)
+![zipcode](Img/pa_zip_collisions.png)
 
 It is interesting to note that the zipcodes with the highest number of collisions are not downtown as I would have expected. The top 2 contain parts of Roosevelt Highway, the 3 one is located in between college campuses and the last 2 seem to have large avenues.
 
 The zipcodes are quite general areas, if we generate a hexbin we can clearly see that the majority of the incidents occur on Roosevelt Blvd. With an additional concentration downtown.
 
-![bin](img/pa_hex_collisions.png)
+![bin](Img/pa_hex_collisions.png)
 
 If  we just look at the individual locations that have the most collisions  we can identify that the top 10 locations are mostly around Roosevelt Blvd but there are also other locations with at the downtown area of Race and Vine along with Alegheny and Broad
 
-![toplocs](img/pa_most_collisions.png)
+![toplocs](Img/pa_most_collisions.png)
 
 We can concentrate on the following three areas if we want to reduce the number of collisions.
 
-![problem areas](img/problem_areas.png)
+![problem areas](Img/problem_areas.png)
 
 Looking at only fatalities and major injuries once again the major accidents occur along Roosevelt Ave.
 
@@ -391,7 +391,7 @@ The results lead us to believe that the classifier is overfitting the test data,
 
 The figure below presents a geographical location of the collisions and if they succeeded or not in identifying the proper collision severity (x- represent misclassifications).
 
-![success](img/success.png)
+![success](Img/success.png)
 
 However some information can be gathered from the model feature importance
 
